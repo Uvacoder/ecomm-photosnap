@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "scss.completion.completePropertyWithSemicolon": false,
+  "prettier.singleQuote": true,
+}

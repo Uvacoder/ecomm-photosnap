@@ -1,0 +1,35 @@
+// Color gradient
+$list: $blue, $orange, $pink;
+
+@mixin accentGradient($direction, $list) {
+  background: linear-gradient($direction, $list);
+}
+
+// Breakpoints
+// 640px, 768px, 1024px, 1440px
+$breakpoints-up: (
+  'sm': '40em',
+  'md': '48em',
+  'lg': '64em',
+  'xl': '90em',
+);
+
+// 639px, 767px, 1023px, 1439px
+$breakpoints-down: (
+  'sm': '39.9375em',
+  'md': '47.9375em',
+  'lg': '63.9375em',
+  'xl': '89.9375em',
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
