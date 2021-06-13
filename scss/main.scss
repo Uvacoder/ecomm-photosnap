@@ -6,6 +6,7 @@
 @import 'base/typography';
 
 @import 'components/buttons';
+@import 'components/featured-stories';
 
 @import 'layout/footer';
 @import 'layout/navigation';
@@ -16,3 +17,5 @@
 @import 'pages/home';
 @import 'pages/pricing';
 @import 'pages/stories';
+
+@import 'sections/hero';
