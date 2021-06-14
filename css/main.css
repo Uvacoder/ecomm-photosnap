@@ -167,6 +167,7 @@ a:hover {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   font-weight: 400;
+  opacity: 0.6;
 }
 
 .btn {
@@ -191,12 +192,12 @@ a:hover {
 }
 
 .btn-secondary-white {
-  color: #000;
+  color: #fff;
 }
 
 .btn-secondary-white::after {
   content: '';
-  background-image: url("/assets/shared/desktop/arrow.svg");
+  background-image: url("/assets/shared/desktop/arrow-white.svg");
   background-repeat: no-repeat;
   display: inline-block;
   height: 14px;
@@ -372,6 +373,12 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 500px;
+}
+
+.featured-stories__story__date {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 0.8125rem;
 }
 
 .featured-stories__story__title {
@@ -764,6 +771,12 @@ a:hover {
   border: 1px solid #dfdfdf;
 }
 
+@media (min-width: 48em) {
+  .header__menu {
+    display: none;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,4 +956,85 @@ a:hover {
   color: #dfdfdf;
   opacity: 0.6;
   margin-bottom: 43px;
+}
+
+.stories__hero {
+  position: relative;
+}
+
+.stories__hero picture {
+  grid-column: span 12;
+}
+
+.stories__hero picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 48em) {
+  .stories__hero picture {
+    height: 650px;
+  }
+}
+
+.stories__hero-content {
+  grid-column: span 12;
+  background-color: #000;
+  color: #fff;
+}
+
+.stories__hero-content .heading-4 {
+  margin: 0;
+}
+
+.stories__hero-content-box {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.stories__hero-content-box-title {
+  margin: 1rem 0;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.33px;
+}
+
+.stories__hero-content-box-info {
+  font-size: 0.8125rem;
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+
+.stories__hero-content-box-info span {
+  opacity: 0.75;
+}
+
+.stories__hero-content-box .body {
+  margin: 0 0 24px;
+}
+
+@media (min-width: 48em) {
+  .stories__hero-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 39px;
+    margin: 0;
+    background-color: transparent;
+    width: 387px;
+  }
+  .stories__hero-content-box {
+    margin: 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .stories__hero-content {
+    left: 112px;
+  }
 }

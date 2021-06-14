@@ -21,6 +21,12 @@
       max-height: 500px;
     }
 
+    &__date {
+      margin-bottom: 0.5rem;
+      color: $white;
+      font-size: 0.8125rem;
+    }
+
     &__title {
       color: $white;
       margin: 0;

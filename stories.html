@@ -1,126 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
 
-  Stories
-  Features
-  Pricing
+    <title>Photosnap | Stories</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="overlay has-fade"></div>
 
-  Get an invite
+      <nav class="flex flex-items-center flex-justify-between">
+        <a href="index.html" class="header__logo">
+          <img src="/assets/shared/desktop/logo.svg" alt="photosnap logo"
+        /></a>
 
-  Last month's featured story
+        <a id="hamburger" href="#" class="header__toggle hide-for-tablet">
+          <span></span><span></span>
+        </a>
 
-  Hazy full moon of Appalachia
-  March 2nd 2020
-  by John Appleseed
+        <div class="header__links hide-for-mobile">
+          <a href="stories.html" class="heading-4 header__link">stories</a
+          ><a href="features.html" class="heading-4 header__link">features</a
+          ><a href="pricing.html" class="heading-4 header__link">pricing</a>
+        </div>
 
-  The dissected plateau area, while not actually made up of geological mountains, 
-  is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-  and while the ridges are not high, the terrain is extremely rugged.
+        <a href="#" class="btn btn-primary hide-for-mobile">get an invite</a>
+      </nav>
 
-  Read the story
+      <div id="mobile-dropdown" class="header__menu has-fade">
+        <a href="#" class="heading-4">stories</a
+        ><a href="#" class="heading-4">features</a
+        ><a href="#" class="heading-4">pricing</a>
+        <hr />
+        <a href="#" class="btn btn-primary hide-for-mobile">get an invite</a>
+      </div>
+    </header>
 
-  April 16th 2020
-  The Mountains
-  by John Appleseed
-  Read Story
+    <main>
+      <!-- HERO SECTION -->
+      <section class="stories__hero grid">
+        <picture>
+          <source
+            srcset="./assets/stories/desktop/moon-of-appalacia.jpg"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="./assets/stories/tablet/moon-of-appalacia.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./assets/stories/mobile/moon-of-appalacia.jpg"
+            alt="moon of appalacia"
+          />
+        </picture>
+        <article class="stories__hero-content">
+          <div class="stories__hero-content-box">
+            <h4 class="heading-4">Last month's featured story</h4>
+            <h2 class="stories__hero-content-box-title">
+              Hazy full moon of Appalachia
+            </h2>
+            <p class="stories__hero-content-box-info">
+              <span>March 2nd 2020</span> by John Appleseed
+            </p>
+            <p class="body">
+              The dissected plateau area, while not actually made up of
+              geological mountains, is popularly called "mountains," especially
+              in eastern Kentucky and West Virginia, and while the ridges are
+              not high, the terrain is extremely rugged.
+            </p>
+            <a href="#" class="btn btn-secondary-white">Read the story</a>
+          </div>
+        </article>
+      </section>
 
-  April 14th 2020
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
+      <!-- SECTION STORIES -->
+      <section class="stories grid">
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">April 16th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              The Mountains
+            </h3>
+            <p class="featured-stories__story__author">by John Appleseed</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/mountains.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/mountains.jpg"
+              alt="the mountains"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">April 14th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Sunset Cityscapes
+            </h3>
+            <p class="featured-stories__story__author">by Benjamin Cruz</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/cityscapes.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/cityscapes.jpg"
+              alt="sunset cityscapes"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">April 11th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              18 Days Voyage
+            </h3>
+            <p class="featured-stories__story__author">by Alexei Borodin</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/18-days-voyage.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/18-days-voyage.jpg"
+              alt="18 Days Voyage"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">April 9th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Architecturals
+            </h3>
+            <p class="featured-stories__story__author">by Samantha Brooke</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/architecturals.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/architecturals.jpg"
+              alt="Architecturals"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">April 7th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              World Tour 2019
+            </h3>
+            <p class="featured-stories__story__author">by Timothy Wagner</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/world-tour.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/world-tour.jpg"
+              alt="world tour"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">April 3rd 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Unforeseen Corners
+            </h3>
+            <p class="featured-stories__story__author">by William Malcolm</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/unforeseen-corners.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/unforeseen-corners.jpg"
+              alt="unforeseen corners"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 29th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              King on Africa: Part II
+            </h3>
+            <p class="featured-stories__story__author">by Tim Hillenburg</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/king-on-africa.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/king-on-africa.jpg"
+              alt="King on africa"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 21st 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              The Trip to Nowhere
+            </h3>
+            <p class="featured-stories__story__author">by Felicia Rourke</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/trip-to-nowhere.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/trip-to-nowhere.jpg"
+              alt="trip-to-nowhere"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 19th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Rage of The Sea
+            </h3>
+            <p class="featured-stories__story__author">by Mohammed Abdul</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/rage-of-the-sea.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/rage-of-the-sea.jpg"
+              alt="rage-of-the-sea"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 16th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Running Free
+            </h3>
+            <p class="featured-stories__story__author">by Michelle</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/running-free.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/running-free.jpg"
+              alt="running-free"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 11th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Behind the Waves
+            </h3>
+            <p class="featured-stories__story__author">by Lamarr Wilson</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/behind-the-waves.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/behind-the-waves.jpg"
+              alt="behind-the-waves"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 9th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Calm Waters
+            </h3>
+            <p class="featured-stories__story__author">by Samantha Brooke</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/calm-waters.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/calm-waters.jpg"
+              alt="calm-waters"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 5th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              The Milky Way
+            </h3>
+            <p class="featured-stories__story__author">by Benjamin Cruz</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/milky-way.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/milky-way.jpg"
+              alt="milky-way"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 4th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Night at The Dark Forest
+            </h3>
+            <p class="featured-stories__story__author">by Mohammed Abdul</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/dark-forest.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/dark-forest.jpg"
+              alt="dark-forest"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">March 1st 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Somwarpet’s Beauty
+            </h3>
+            <p class="featured-stories__story__author">by Michelle</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/somwarpet.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/somwarpet.jpg"
+              alt="somwarpet"
+              class="story-img"
+            />
+          </picture>
+        </a>
+        <!--  -->
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <p class="featured-stories__story__date">February 25th 2020</p>
+            <h3 class="featured-stories__story__title heading-3">
+              Land of Dreams
+            </h3>
+            <p class="featured-stories__story__author">by William Malcolm</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared/desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/land-of-dreams.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/land-of-dreams.jpg"
+              alt="land-of-dreams"
+              class="story-img"
+            />
+          </picture>
+        </a>
+      </section>
+    </main>
 
-  April 11th 2020
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo">
+            <img src="/assets/shared/desktop/logo-white.svg" alt="logo" />
+          </a>
+          <div class="footer__social-links">
+            <a href="#">
+              <img src="/assets/shared/desktop/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/youtube.svg" alt="youtube" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/twitter.svg" alt="twitter" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/pinterest.svg" alt="pinterest" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <a href="index.html" class="heading-4">home</a
+            ><a href="stories.html" class="heading-4">stories</a
+            ><a href="features.html" class="heading-4">features</a
+            ><a href="pricing.html" class="heading-4">pricing</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <a href="#" class="btn btn-secondary footer__cta">get and invite</a>
+          <p class="copy">Copyright 2021. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
 
-  April 9th 2020
-  Architecturals
-  by Samantha Brooke
-  Read Story
-
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
-  April 3rd 2020
-  Unforeseen Corners
-  by William Malcolm
-  Read Story
-
-  March 29th 2020
-  King on Africa: Part II
-  by Tim Hillenburg
-  Read Story
-
-  March 21st 2020
-  The Trip to Nowhere
-  by Felicia Rourke
-  Read Story
-
-  March 19th 2020
-  Rage of The Sea
-  by Mohammed Abdul
-  Read Story
-
-  March 16th 2020
-  Running Free
-  by Michelle
-  Read Story
-
-  March 11th 2020
-  Behind the Waves
-  by Lamarr Wilson
-  Read Story
-
-  March 9th 2020
-  Calm Waters
-  by Samantha Brooke
-  Read Story
-
-  March 5th 2020
-  The Milky Way
-  by Benjamin Cruz
-  Read Story
-
-  March 4th 2020
-  Night at The Dark Forest
-  by  Mohammed Abdul
-  Read Story
-
-  March 1st 2020
-  Somwarpet’s Beauty
-  by Michelle
-  Read Story
-
-  February 25th 2020
-  Land of Dreams
-  by William Malcolm
-  Read Story
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
-</body>
+    <script src="/js/script.js"></script>
+  </body>
 </html>

@@ -106,5 +106,9 @@
       width: 90%;
       border: 1px solid $lightGrey;
     }
+
+    @include breakpoint-up(md) {
+      display: none;
+    }
   }
 }

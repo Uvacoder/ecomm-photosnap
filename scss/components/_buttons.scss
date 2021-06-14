@@ -21,11 +21,11 @@
 
 .btn-secondary {
   &-white {
-    color: $black;
+    color: $white;
 
     &::after {
       content: '';
-      background-image: url('/assets/shared/desktop/arrow.svg');
+      background-image: url('/assets/shared/desktop/arrow-white.svg');
       background-repeat: no-repeat;
       display: inline-block;
       height: 14px;

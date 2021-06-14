@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
 
-  Stories
+    <title>Photosnap | Features</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="overlay has-fade"></div>
+
+      <nav class="flex flex-items-center flex-justify-between">
+        <a href="index.html" class="header__logo">
+          <img src="/assets/shared/desktop/logo.svg" alt="photosnap logo"
+        /></a>
+
+        <a id="hamburger" href="#" class="header__toggle hide-for-tablet">
+          <span></span><span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="stories.html" class="heading-4 header__link">stories</a
+          ><a href="features.html" class="heading-4 header__link">features</a
+          ><a href="pricing.html" class="heading-4 header__link">pricing</a>
+        </div>
+
+        <a href="#" class="btn btn-primary hide-for-mobile">get an invite</a>
+      </nav>
+
+      <div id="mobile-dropdown" class="header__menu has-fade">
+        <a href="#" class="heading-4">stories</a
+        ><a href="#" class="heading-4">features</a
+        ><a href="#" class="heading-4">pricing</a>
+        <hr />
+        <a href="#" class="btn btn-primary hide-for-mobile">get an invite</a>
+      </div>
+    </header>
+
+    <main></main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo">
+            <img src="/assets/shared/desktop/logo-white.svg" alt="logo" />
+          </a>
+          <div class="footer__social-links">
+            <a href="#">
+              <img src="/assets/shared/desktop/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/youtube.svg" alt="youtube" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/twitter.svg" alt="twitter" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/pinterest.svg" alt="pinterest" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <a href="index.html" class="heading-4">home</a
+            ><a href="stories.html" class="heading-4">stories</a
+            ><a href="features.html" class="heading-4">features</a
+            ><a href="pricing.html" class="heading-4">pricing</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <a href="#" class="btn btn-secondary footer__cta">get and invite</a>
+          <p class="copy">Copyright 2021. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+
+    <!-- Stories
   Features
   Pricing
 
@@ -62,7 +145,6 @@
 
   Get an invite
 
-  Copyright 2019. All Rights Reserved
-
-</body>
+  Copyright 2019. All Rights Reserved -->
+  </body>
 </html>
