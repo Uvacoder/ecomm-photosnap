@@ -1,0 +1,129 @@
+.footer {
+  background-color: $black;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 3.5rem 0;
+  }
+
+  &__logo {
+    display: block;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &__social-links {
+    display: flex;
+    text-align: center;
+    max-width: 9.625rem;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    img:not(:hover) {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &__nav {
+    margin: 49px 0 119px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      color: $white;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__cta {
+    display: block;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  .copy {
+    color: white;
+    opacity: 0.5025;
+    text-align: center;
+    margin: 0;
+  }
+
+  @include breakpoint-up(md) {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+    }
+
+    &__logo {
+      text-align: left;
+    }
+
+    &__social-links {
+      order: 3;
+      text-align: left;
+      margin: 0;
+    }
+
+    &__col {
+      display: inline-flex;
+      flex-direction: column;
+      flex: 1 1 0;
+      // text-align: left;
+
+      &:last-child {
+        justify-content: space-between;
+      }
+    }
+
+    &__nav {
+      margin: 0;
+      flex-direction: row;
+      margin-bottom: 72px;
+      width: 315px;
+    }
+
+    &__cta {
+      text-align: right;
+    }
+
+    .copy {
+      text-align: right;
+    }
+  }
+
+  @include breakpoint-up(lg) {
+    &__logo {
+      padding: 0;
+    }
+
+    &__col {
+      &:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__social-links {
+      margin-top: -25px;
+    }
+
+    &__nav {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+      padding-left: 3rem;
+
+      a:hover {
+        opacity: 0.3;
+      }
+    }
+  }
+}

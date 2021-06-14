@@ -1,0 +1,45 @@
+.features {
+  &__feature {
+    grid-column: span 12;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+
+    @include breakpoint-up(md) {
+      width: 457px;
+    }
+
+    @include breakpoint-up(lg) {
+      grid-column: span 4;
+      width: 300px;
+
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .limit {
+        margin-top: 36px;
+      }
+    }
+
+    @include breakpoint-up(xl) {
+      width: 350px;
+    }
+
+    h3 {
+      margin-top: 48px;
+    }
+
+    p {
+      opacity: 0.6;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
+  }
+}

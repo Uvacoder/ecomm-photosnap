@@ -25,7 +25,7 @@
       <div class="overlay has-fade"></div>
 
       <nav class="flex flex-items-center flex-justify-between">
-        <a href="/" class="header__logo">
+        <a href="index.html" class="header__logo">
           <img src="/assets/shared/desktop/logo.svg" alt="photosnap logo"
         /></a>
 
@@ -34,9 +34,9 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="#" class="heading-4 header__link">stories</a
-          ><a href="#" class="heading-4 header__link">features</a
-          ><a href="#" class="heading-4 header__link">pricing</a>
+          <a href="stories.html" class="heading-4 header__link">stories</a
+          ><a href="features.html" class="heading-4 header__link">features</a
+          ><a href="pricing.html" class="heading-4 header__link">pricing</a>
         </div>
 
         <a href="#" class="btn btn-primary hide-for-mobile">get an invite</a>
@@ -81,9 +81,10 @@
         </div>
       </section>
 
-      <section class="featured-stories">
-        <div class="featured-stories__block grid">
-          <picture class="featured-stories__block-pic-1">
+      <!-- PREVIEW -->
+      <section class="preview">
+        <div class="preview__block grid">
+          <picture class="preview__block-pic-1">
             <source
               srcset="./assets/home/desktop/beautiful-stories.jpg"
               media="(min-width: 1024px)"
@@ -97,7 +98,7 @@
               alt="beautiful stories photo"
             />
           </picture>
-          <article class="featured-stories__block-content-1">
+          <article class="preview__block-content-1">
             <h2 class="heading-1">Beautiful stories every time</h2>
             <p class="body">
               We provide design templates to ensure your stories look terrific.
@@ -105,10 +106,12 @@
               Then share your story with everyone.
             </p>
 
-            <a href="#" class="btn btn-secondary-white">view stories</a>
+            <a href="stories.html" class="btn btn-secondary-white"
+              >view the stories</a
+            >
           </article>
 
-          <picture class="featured-stories__block-pic-2">
+          <picture class="preview__block-pic-2">
             <source
               srcset="./assets/home/desktop/designed-for-everyone.jpg"
               media="(min-width: 1024px)"
@@ -122,35 +125,212 @@
               alt="beautiful stories photo"
             />
           </picture>
-          <article class="featured-stories__block-content-2">
+          <article class="preview__block-content-2">
             <h2 class="heading-1">Beautiful stories every time</h2>
             <p class="body">
-              We provide design templates to ensure your stories look terrific.
-              Easily add photos, text, embed maps and media from other networks.
-              Then share your story with everyone.
+              View the stories Designed for everyone Photosnap can help you
+              create stories that resonate with your audience. Our tool is
+              designed for photographers of all levels, brands, businesses you
+              name it.
             </p>
 
-            <a href="#" class="btn btn-secondary-white">view stories</a>
+            <a href="stories.html" class="btn btn-secondary-white"
+              >view the stories</a
+            >
           </article>
         </div>
 
-        <div class="featured-stories__block grid"></div>
+        <div class="preview__block grid"></div>
+      </section>
+
+      <!-- FEATURED STORIES -->
+      <section class="featured-stories grid">
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <h3 class="featured-stories__story__title heading-3">
+              The Mountains
+            </h3>
+            <p class="featured-stories__story__author">by John Appleseed</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared//desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/mountains.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/mountains.jpg"
+              alt="the mountains"
+              class="story-img"
+            />
+          </picture>
+        </a>
+
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <h3 class="featured-stories__story__title heading-3">
+              Sunset Cityscapes
+            </h3>
+            <p class="featured-stories__story__author">by Benjamin Cruz</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared//desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/cityscapes.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/cityscapes.jpg"
+              alt="sunset cityscapes"
+              class="story-img"
+            />
+          </picture>
+        </a>
+
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <h3 class="featured-stories__story__title heading-3">
+              18 Days Voyage
+            </h3>
+            <p class="featured-stories__story__author">by Alexei Borodin</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared//desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/18-days-voyage.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/18-days-voyage.jpg"
+              alt="18 Days Voyage"
+              class="story-img"
+            />
+          </picture>
+        </a>
+
+        <a href="#" class="featured-stories__story">
+          <article class="featured-stories__story__article">
+            <h3 class="featured-stories__story__title heading-3">
+              Architecturals
+            </h3>
+            <p class="featured-stories__story__author">by Samantha Brooke</p>
+            <p class="link">
+              <span class="heading-4">read story</span
+              ><img
+                src="/assets/shared//desktop/arrow-white.svg"
+                alt="white arrow"
+              />
+            </p>
+          </article>
+          <picture>
+            <source
+              srcset="./assets/stories/desktop/architecturals.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/assets/stories/mobile/architecturals.jpg"
+              alt="Architecturals"
+              class="story-img"
+            />
+          </picture>
+        </a>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="features">
+        <div class="grid-2">
+          <article class="features__feature">
+            <img
+              src="/assets/features/desktop/responsive.svg"
+              alt="100% responsive"
+            />
+            <h3 class="heading-3">100% Responsive</h3>
+            <p class="body">
+              No matter which the device you’re on, our site is fully responsive
+              and stories look beautiful on any screen.
+            </p>
+          </article>
+
+          <article class="features__feature">
+            <img
+              src="/assets/features/desktop/no-limit.svg"
+              alt="no limit uploads"
+              class="limit"
+            />
+            <h3 class="heading-3">No Photo Upload Limit</h3>
+            <p class="body">
+              Our tool has no limits on uploads or bandwidth. Freely upload in
+              bulk and share all of your stories in one go.
+            </p>
+          </article>
+
+          <article class="features__feature">
+            <img src="/assets/features/desktop/embed.svg" alt="embed" />
+            <h3 class="heading-3">Available to Embed</h3>
+            <p class="body">
+              Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+              videos, Google Maps, and more.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
-    <!-- 
-       View the stories Designed for everyone
-    Photosnap can help you create stories that resonate with your audience. Our
-    tool is designed for photographers of all levels, brands, businesses you
-    name it. View the stories The Mountains by John Appleseed Read Story Sunset
-    Cityscapes by Benjamin Cruz Read Story 18 Days Voyage by Alexei Borodin Read
-    Story Architecturals by Samantha Brooke Read Story 100% Responsive No matter
-    which the device you’re on, our site is fully responsive and stories look
-    beautiful on any screen. No Photo Upload Limit Our tool has no limits on
-    uploads or bandwidth. Freely upload in bulk and share all of your stories in
-    one go. Available to Embed Embed Tweets, Facebook posts, Instagram media,
-    Vimeo or YouTube videos, Google Maps, and more. Home Stories Features
-    Pricing Get an invite Copyright 2019. All Rights Reserved -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo">
+            <img src="/assets/shared/desktop/logo-white.svg" alt="logo" />
+          </a>
+          <div class="footer__social-links">
+            <a href="#">
+              <img src="/assets/shared/desktop/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/youtube.svg" alt="youtube" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/twitter.svg" alt="twitter" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/pinterest.svg" alt="pinterest" />
+            </a>
+            <a href="#">
+              <img src="/assets/shared/desktop/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <a href="index.html" class="heading-4">home</a
+            ><a href="stories.html" class="heading-4">stories</a
+            ><a href="features.html" class="heading-4">features</a
+            ><a href="pricing.html" class="heading-4">pricing</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <a href="#" class="btn btn-secondary footer__cta">get and invite</a>
+          <p class="copy">Copyright 2021. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="/js/script.js"></script>
   </body>
