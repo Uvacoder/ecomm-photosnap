@@ -20,6 +20,8 @@
 }
 
 .btn-secondary {
+  color: $black;
+
   &-white {
     color: $white;
 
@@ -41,13 +43,14 @@
 
   &::after {
     content: '';
-    background-image: url('/assets/shared/desktop/arrow-white.svg');
+    background-image: url('/assets/shared/desktop/arrow.svg');
     background-repeat: no-repeat;
     display: inline-block;
     height: 14px;
     width: 43px;
     margin-left: 20px;
     vertical-align: middle;
+    color: black;
   }
 
   &:hover {

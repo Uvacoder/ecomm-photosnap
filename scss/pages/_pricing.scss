@@ -1,0 +1,156 @@
+.pricing {
+  margin: 4rem 0;
+
+  &__billing {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 255px;
+    margin: 0 auto;
+
+    input {
+      display: none;
+    }
+
+    // &-monthly-price {
+    //   font-weight: 700;
+    // }
+
+    // .strong-bold {
+    //   font-weight: 700;
+    //   opacity: 1;
+    // }
+
+    // span:last-of-type {
+    //   opacity: 0.5;
+    // }
+  }
+
+  &__container {
+    width: 90%;
+    margin: 4rem auto;
+
+    &__card {
+      grid-column: span 12;
+      text-align: center;
+      padding: 3.5rem 1.3125rem 2.5rem;
+      margin-bottom: 1.5rem;
+      background-color: $lightestGrey;
+      position: relative;
+
+      &:nth-child(2) {
+        background-color: $black;
+        color: $white;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 6px;
+          width: 100%;
+          @include accentGradient(-170deg, $list);
+        }
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 1.125rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .period {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+      }
+
+      .btn-plan {
+        border: none;
+        width: 90%;
+        cursor: pointer;
+        background-color: $white;
+        color: $black;
+
+        &:hover {
+          background-color: $lightGrey;
+        }
+      }
+
+      @include breakpoint-up(md) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        // height: 270px;
+
+        &-content {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &-desc {
+          width: 270px;
+          text-align: left;
+        }
+
+        &-price {
+          text-align: right;
+        }
+
+        .period {
+          margin-right: 0.8rem;
+        }
+
+        .btn-plan {
+          width: 270px;
+          display: block;
+        }
+
+        &:nth-child(2) {
+          &::before {
+            left: 0;
+            height: 100%;
+            width: 6px;
+          }
+        }
+      }
+
+      @include breakpoint-up(lg) {
+        grid-column: span 4;
+
+        &-content {
+          display: block;
+        }
+
+        &:nth-child(2) {
+          transform: scaleY(1.1);
+
+          &::before {
+            top: 0;
+            height: 6px;
+            width: 100%;
+          }
+        }
+
+        &-desc {
+          width: 100%;
+          text-align: center;
+        }
+
+        &-price {
+          text-align: center;
+        }
+
+        .btn-plan {
+          width: 100%;
+        }
+      }
+    }
+    @include breakpoint-up(lg) {
+      max-width: 1110px;
+      margin: 4rem auto;
+    }
+  }
+}
