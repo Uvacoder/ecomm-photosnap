@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL here](https://www.frontendmentor.io/solutions/html-scss-javascript-3iCsZAu0k)
+- Live Site URL: [URL here](https://photosnap-website-sb.netlify.app/)
 
 ## My process
 
@@ -43,9 +43,9 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
+
+This was quite a challenge for me. However, it helped me a lot to practice using the CSS Grid combined with SCSS and flexbox. I used basic HTML & CSS because the project didn't have too much functionality. Nevertheless, this particular project had a lot of parts that could take real advantage from using a JavaScript framework like React or Vue.
 
 ## Author
 
@@ -53,4 +53,3 @@ Users should be able to:
 - Frontend Mentor - [@sergiobarria](https://www.frontendmentor.io/profile/sergiobarria)
 - Twitter - [@sergioBarria01](https://twitter.com/sergioBarria01)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
